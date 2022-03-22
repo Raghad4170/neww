@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
-        <menuitem id="litigation_root" name="القضايا" parent="project.menu_main_pm" action="view_litigation" sequence="3"/>
 <!--       timesheet -->      
 
         <menuitem id="hr_timesheet.timesheet_menu_root" name="سجلات الأنشطة" sequence="55" web_icon="litigation,static/description/timesheet.png" groups="parentid.employee"/>
@@ -367,8 +366,6 @@
                 </p>
             </field>
         </record>
-      
-        <menuitem id="litigation_tasks_root_gantt" name="متابعة مهام" parent="litigation_root" action="view_gantt_tasks" sequence="3"/>
 
  <record id="project_task_inherit" model="ir.ui.view">
         <field name="name">project.task.inherit</field>
@@ -855,7 +852,8 @@
             </field>
         </record>
 
-      
+        <menuitem id="litigation_root" name="القضايا" parent="project.menu_main_pm" action="view_litigation" sequence="3"/>
+        <menuitem id="litigation_tasks_root_gantt" name="متابعة مهام" parent="litigation_root" action="view_gantt_tasks" sequence="3"/>
         <menuitem id="litigation_root_1" name="القضايا" parent="litigation_root" action="view_litigation" sequence="1"/>
       
       
